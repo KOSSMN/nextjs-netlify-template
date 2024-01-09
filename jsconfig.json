@@ -1,0 +1,23 @@
+{
+  // This file is required for VSCode to understand webpack aliases
+  "module": "es6",
+  "moduleResolution": "node",
+  "compilerOptions": {
+    "baseUrl": ".",
+    // Relative to "baseUrl"
+    "paths": {
+      "@/*": [
+        "./app/*"
+      ],
+      "@root": [
+        "."
+      ]
+    }
+  },
+  "exclude": [
+    ".git",
+    "node_modules",
+    "**/dist/*",
+    "**/node_modules/*"
+  ]
+}
